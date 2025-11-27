@@ -3161,9 +3161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0dcdb94999b6f4ca6b791eaacccd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIMainMenu: {fileID: 155998818}
-  UIStatus: {fileID: 1282403266}
-  UIInventory: {fileID: 690207094}
 --- !u!1 &1191395387
 GameObject:
   m_ObjectHideFlags: 0

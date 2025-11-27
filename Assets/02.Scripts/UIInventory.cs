@@ -13,4 +13,13 @@ public class UIInventory : MonoBehaviour
     [SerializeField] private GameObject inventorySlot;
 
     [SerializeField] private Button back_Btn;
+
+    UIManager uiManager;
+
+    private void Start()
+    {
+        uiManager = UIManager.Instance;
+
+        back_Btn.onClick.AddListener(uiManager.UIMainMenu.OpenMainMenu);
+    }
 }

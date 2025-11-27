@@ -11,4 +11,13 @@ public class UIStatus : MonoBehaviour
     [SerializeField] private TextMeshProUGUI health_Text;
 
     [SerializeField] private Button back_Btn;
+
+    UIManager uiManager;
+
+    private void Start()
+    {
+        uiManager = UIManager.Instance;
+
+        back_Btn.onClick.AddListener(uiManager.UIMainMenu.OpenMainMenu);
+    }
 }

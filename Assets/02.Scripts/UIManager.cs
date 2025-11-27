@@ -4,7 +4,17 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private UIMainMenu UIMainMenu;
-    [SerializeField] private UIStatus UIStatus;
-    [SerializeField] private UIInventory UIInventory;
+    public static UIManager Instance { get; private set; }
+
+    [field:SerializeField] public UIMainMenu UIMainMenu { get; private set; }
+    [field:SerializeField] public UIStatus UIStatus { get; private set; }
+    [field:SerializeField] public UIInventory UIInventory { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
+    }
 }
