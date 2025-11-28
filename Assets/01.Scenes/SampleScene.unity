@@ -2217,6 +2217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d38798239142bc146b3b6515d5b20059, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  swordIcon: {fileID: 2138796550, guid: 821696c796315ad4b82bb998551ae591, type: 3}
+  armorIcon: {fileID: 1759147058, guid: 7d369eb0d7bedb94dbffbecbf9caa373, type: 3}
 --- !u!1 &690207089
 GameObject:
   m_ObjectHideFlags: 0
@@ -2334,8 +2336,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curQuantity_Text: {fileID: 275090780}
   maxQuantity_Text: {fileID: 2043880311}
-  inventoryContent: {fileID: 1302922143}
-  inventorySlot: {fileID: 1278114822664211387, guid: c7a915d96c3bcf84193cdc00326960c8, type: 3}
+  slotParent: {fileID: 1302922143}
+  uiSlot: {fileID: 4240693990898878366, guid: c7a915d96c3bcf84193cdc00326960c8, type: 3}
   back_Btn: {fileID: 1578407775}
 --- !u!1 &714258087
 GameObject:
@@ -3161,6 +3163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0dcdb94999b6f4ca6b791eaacccd11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <UIMainMenu>k__BackingField: {fileID: 155998818}
+  <UIStatus>k__BackingField: {fileID: 1282403266}
+  <UIInventory>k__BackingField: {fileID: 690207094}
 --- !u!1 &1191395387
 GameObject:
   m_ObjectHideFlags: 0
@@ -4994,8 +4999,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 90680692}
   - {fileID: 155998817}
   - {fileID: 1282403265}
   - {fileID: 690207093}
   - {fileID: 789401647}
-  - {fileID: 90680692}

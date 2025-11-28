@@ -20,4 +20,11 @@ public class UIStatus : MonoBehaviour
 
         back_Btn.onClick.AddListener(uiManager.UIMainMenu.OpenMainMenu);
     }
+
+    public void SetData(Character player)
+    {
+        attack_Text.text = player.Attack.ToString();
+        defence_Text.text = player.Defense.ToString();
+        health_Text.text = player.Health.ToString();    
+    }
 }

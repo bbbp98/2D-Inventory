@@ -21,6 +21,8 @@ public class UIMainMenu : MonoBehaviour
 
         status_Btn.onClick.AddListener(OpenStatus);
         inventory_Btn.onClick.AddListener(OpenInventory);
+
+        OpenMainMenu();
     }
 
     public void OpenMainMenu()
@@ -46,5 +48,12 @@ public class UIMainMenu : MonoBehaviour
     {
         status_Btn.gameObject.SetActive(active);
         inventory_Btn.gameObject.SetActive(active);
+    }
+
+    public void SetData(Character player)
+    {
+        id_Text.text = player.Id;
+        playerLv_Text.text = player.Level.ToString();
+        gold_Text.text = player.Gold.ToString();
     }
 }
